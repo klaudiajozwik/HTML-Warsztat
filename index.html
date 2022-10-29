@@ -12,17 +12,17 @@
 </head>
 <body>
 <header>
-    <div class="container">
     <nav>
+        <div class="nav__content container">
     <p class="logo"> BestShop </p>
     <ul>
-        <li> <a href="#why-us"> Why Us </a> </li>
+        <li> <a href="#why"> Why Us </a> </li>
         <li> <a href="#benefits"> Benefits </a> </li>
         <li>  <a href="#price"> Prices </a> </li>
         <li> <a href="#contact">Contact </a>  </li>
     </ul>
+        </div>
     </nav>
-    </div>
 </header>
         <section class="first_window">
         <div class="opening_content container">
@@ -34,7 +34,7 @@
         </section>
 
 
-<section class="statistics">
+<section class="statistics" id="why">
     <div class="container">
         <h2 class="statistics__title">The most popular sales platform in country</h2>
         <span class="statistics__container">
@@ -64,7 +64,7 @@
         </span>
     </div>
 </section>
-<section class="advantage_container">
+<section class="advantage_container" id="benefits">
     <div class="container">
         <article class="advantage__single advantage__single_macbook">
                 <div class="advantage_content">
@@ -98,8 +98,8 @@
         </div>
     </div>
 </section>
-<section class ="price_container">
-    <div class="container ">
+<section class ="price_container container" id="price">
+<!--    <div class="container ">-->
     <div>
         <h3> Pricing </h3>
 
@@ -109,11 +109,27 @@
             <h4> Basic </h4>
             <h5> $0 </h5>
             <div class="price__box_basic_description">
-               <p> 100 MB HDD </p>
+            <div class="price__checkmark">
+                <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+                <p> 100 MB HDD </p>
+            </div>
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
                 <p> 1 Subdomain </p>
+                    </div>
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
                 <p> 2 E-mails </p>
+                </div>
+                <div class="price__checkmark">
+                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">
                <p> Two years licence </p>
-               <p> Full support </p>
+                    </div>
+                <div class="price__checkmark">
+                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">
+                    <p> Full support </p>
+                    </div>
+
             </div>
             <div>
                 <button class="btn__price_1 btn__price"> <a href="#button-price-basic"> Begin </a> </button>
@@ -125,11 +141,26 @@
             <h5> $20 </h5>
             <p>Limited offer</p>
             <div class="price__box_professional_description">
-            <p> 500 MB HDD </p>
-            <p> 2 Subdomain</p>
-            <p> 5 E-mails </p>
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+                     <p> 500 MB HDD </p>
+                    </div>
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+                     <p> 2 Subdomain</p>
+                </div>
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+                     <p> 5 E-mails </p>
+                    </div>
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
             <p> One years licence </p>
+                    </div>
+                <div class="price__checkmark">
+                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">
             <p> Full support </p>
+                    </div>
             </div>
             <div>
                 <button class="btn__price_2 btn__price"> <a href="#button-price-professional"> Begin </a> </button>
@@ -140,11 +171,26 @@
             <h5> $60 </h5>
             <p>Limited offer</p>
             <div class="price__box_premium_description">
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
                 <p> 2 GB HDD </p>
+                </div>
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
                 <p> 5 Subdomain </p>
+                    </div>
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
                 <p> 20 E-mails </p>
+                    </div>
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
                 <p> Two years licence </p>
+                </div>
+                <div class="price__checkmark">
+                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
                    <p> Full support </p>
+                    </div>
             </div>
             <div>
                 <button class="btn__price_3 btn__price"> <a href="#button-price-premium"> Begin </a> </button>
@@ -153,7 +199,7 @@
     </article>
     </div>
 </section>
-<section class="container form__container">
+<section class="container form__container" id="contact">
     <div class="contact">
     <h2>Any questions?</h2>
         <h3> Leave your email address or contact us! </h3>
