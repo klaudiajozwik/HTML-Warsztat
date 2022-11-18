@@ -1,6 +1,6 @@
 @import "scss/_settings/_settings";
 .form__container{
-  //max-width: 89.6rem;
+  max-width: 89.6rem;
   display: flex;
   padding-top: 15.5rem;
   gap:4rem;
@@ -51,6 +51,7 @@
 form{
   display: flex;
   flex-direction: column;
+  max-width: 44rem;
 
 }
 

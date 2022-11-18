@@ -3,6 +3,8 @@
   background-color: $color-light-grey;
   padding:11.5rem 3.7rem;
   box-sizing: border-box;
+  margin: 0 auto;
+
 
   .advantage_content{
     h2{
@@ -19,9 +21,11 @@
 
 .advantage__single{
   display: flex;
+  justify-content: center;
   gap:19.2rem;
   background-color: $color-white;
-  margin:3.7rem;
+  //margin-top:3.7rem;
+  margin:0 auto;
   max-height: 37rem;
   max-width: 112.4rem;
   box-sizing: border-box;
@@ -30,6 +34,7 @@
   display:flex;
   background-color: $color-light-grey;
   gap: 6.1rem;
+  margin-top:3.7rem;
   .advantage_content_trumpet{
     padding-left:3.5rem;
     padding-top: 6.9rem;
@@ -75,6 +80,7 @@
   }
 }
 .advantage__single_macbook{
+  margin-top:3.7rem;
   .advantage_content{
     padding-top: 9.1rem;
     padding-left:3.5rem;
@@ -103,6 +109,7 @@
   }
 }
 .advantage__single_phone{
+  margin-top:3.7rem;
   .advantage_content{
     padding-top: 6.9rem;
     padding-right: 2rem;
