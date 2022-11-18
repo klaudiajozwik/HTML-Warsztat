@@ -1,0 +1,77 @@
+@import "scss/_settings/_settings";
+.statistics{
+  padding-top: 10rem;
+  padding-bottom: 12.1rem;
+  background-color: $color-white;
+
+  h2{
+    text-align: center;
+    margin-bottom: 10.3rem;
+    @include sectionHeading($font-size:36px);
+  }
+
+}
+.statistics__container{
+  display:flex;
+  justify-content: space-between;
+  padding-left:28.6rem;
+  padding-right: 28.4rem;
+  .statistics__single{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    .statistics__number{
+      @extend %statistic-text-black;
+    }
+    .statistics__description{
+      @extend %statistic-text-grey;
+    }
+  }
+}
+
+.statistics__single:nth-child(1) .statistics__circle::before{
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 6.2rem;
+  height: 6.2rem;
+  background-color: $color-accent-redish;
+
+}
+.statistics__single:nth-child(1) img{
+  left:3rem;
+  top:0.5rem;
+}
+.statistics__single:nth-child(2) .statistics__circle::before{
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 6.2rem;
+  height: 6.2rem;
+  background-color: $color-primary;
+}
+.statistics__single:nth-child(2) img{
+  left:1.5rem;
+  top:0.5rem;
+}
+.statistics__single:last-child .statistics__circle::before{
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 6.2rem;
+  height: 6.2rem;
+  background-color: $color-accent-green;
+}
+.statistics__single:nth-child(3) img{
+  left:3rem;
+  top:0.5rem;
+}
+.statistics__circle{
+  img{
+    position: relative;
+  }
+}
+
+@media (max-width: 600px) {
+
+}

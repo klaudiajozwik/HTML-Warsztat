@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/css.css">
+<!--    <link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="scss/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Raleway:ital,wght@0,300;0,700;0,800;1,400&display=swap" rel="stylesheet">
@@ -64,22 +64,23 @@
         </span>
     </div>
 </section>
-<section class="advantage_container container" id="benefits">
+<section class="advantage_container" id="benefits">
+    <div class="container">
         <article class="advantage__single advantage__single_macbook">
                 <div class="advantage_content">
                     <h2>Be always first</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis dolor expedita laborum libero neque, officiis quidem quos similique voluptatum? </p>
                 </div>
-                <div class="advantage_img">
+                <div class="advantage_img advantage__img_macbook">
                     <img src="assets/Macbook.png" alt="macbook" width="400px" height="220px">
                 </div>
         </article>
         <article class="advantage__single advantage__single_phone">
-            <div class="advantage_img">
+            <div class="advantage_img advantage__img_phone">
                 <img src="assets/iPhone.png" alt="phone" width="400px" height="330px">
             </div>
             <div class="advantage_content">
-                <h2> Your shop is where you are! </h2>
+                <h2> Your shop is <br> where you are! </h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis dolor expedita laborum libero neque, officiis quidem quos similique voluptatum? </p>
             </div>
 
@@ -87,20 +88,20 @@
 
         <article class="advantage__single advantage_single_trumpet">
             <div class="advantage_content advantage_content_trumpet">
-               <h2>Your shop is
-                where you are!</h2>
+               <h2>Increase recognition <br> your brand!</h2>
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
             <div class="advantage__img_trumpet">
                  <img src="assets/Trumpet.png" alt="trumpet" width="296px" height="208px">
             </div>
-        </article>
-</section>
-<section class ="price_container container" id="price">
-<!--    <div class="container ">-->
-    <div>
-        <h3> Pricing </h3>
 
+        </article>
+    </div>
+</section>
+<section class ="price__container container" id="price">
+<!--    <section price>-->
+    <div class="price__title">
+        <h2> Pricing </h2>
     </div>
     <article class="price__box container">
         <div class="price__box_basic">
@@ -108,26 +109,25 @@
             <h5> $0 </h5>
             <div class="price__box_basic_description">
             <div class="price__checkmark">
-                <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> 100 MB HDD </p>
             </div>
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> 1 Subdomain </p>
                     </div>
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> 2 E-mails </p>
                 </div>
                 <div class="price__checkmark">
-                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">-->
                <p> Two years licence </p>
                     </div>
                 <div class="price__checkmark">
-                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">-->
                     <p> Full support </p>
                     </div>
-
             </div>
             <div>
                 <button class="btn__price_1 btn__price"> <a href="#button-price-basic"> Begin </a> </button>
@@ -140,23 +140,23 @@
             <p>Limited offer</p>
             <div class="price__box_professional_description">
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                      <p> 500 MB HDD </p>
                     </div>
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                      <p> 2 Subdomain</p>
                 </div>
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                      <p> 5 E-mails </p>
                     </div>
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
             <p> One years licence </p>
                     </div>
                 <div class="price__checkmark">
-                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">-->
             <p> Full support </p>
                     </div>
             </div>
@@ -170,23 +170,23 @@
             <p>Limited offer</p>
             <div class="price__box_premium_description">
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> 2 GB HDD </p>
                 </div>
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> 5 Subdomain </p>
                     </div>
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> 20 E-mails </p>
                     </div>
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> Two years licence </p>
                 </div>
                 <div class="price__checkmark">
-                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">
+<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                    <p> Full support </p>
                     </div>
             </div>
@@ -212,9 +212,9 @@
 <form class="form">
     <div class="form__text">
     <label for="text" class="label_text"> name </label>
-    <input type="text" id="text" class="form__checkbox" />
+    <input type="text" id="text" class="form__text_area" />
     <label for="email" class="label_text"> e-mail</label>
-    <input type="email" id="email" class="form__checkbox" />
+    <input type="email" id="email" class="form__text_area" />
     </div>
     <div class="form__consent">
         <label for="chk" class="label__chk">
@@ -233,12 +233,10 @@
             <p>© 2019 BestShop LTD, All Rights Reserved</p>
         </div>
         <div class="footer__sm">
-            <img src="assets/Twitter.svg" alt="twiter" class="sm__images">
-            <img src="assets/Facebook.svg" alt="facebook" class="sm__images">
-
+          <a href="#=tw"> <img src="assets/Twitter.svg" alt="twiter" class="sm__images"> </a>
+            <a href="#=fb" > <img src="assets/Facebook.svg" alt="facebook" class="sm__images"> </a>
         </div>
     </div>
-
 </footer>
 </body>
 </html>

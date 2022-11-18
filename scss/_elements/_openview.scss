@@ -1,0 +1,39 @@
+@import "scss/_settings/_settings";
+.first_window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: $color-white;
+}
+
+.opening_content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13rem;
+  h1 {
+    @include sectionHeading($font-size:41px);
+    &+p{
+      font-size: 1.6rem;
+      font-family: $font-open-sans;
+      color: $color-basic;
+    }
+  }
+}
+
+.btn {
+@include btnPrimary($border-radius:40px,$btn-padding:22px 92px, $btn-f-size:16px);
+}
+
+.open_image{
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 600px) {
+
+}

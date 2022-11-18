@@ -1,0 +1,114 @@
+@import "scss/_settings/_settings";
+.advantage_container{
+  background-color: $color-light-grey;
+  padding:11.5rem 3.7rem;
+  box-sizing: border-box;
+
+  .advantage_content{
+    h2{
+      @include sectionHeading($font-size:36px);
+    }
+    p{
+      padding-top: 3rem;
+      padding-bottom:4rem;
+      @extend %text-benefits;
+    }
+  }
+}
+
+
+.advantage__single{
+  display: flex;
+  gap:19.2rem;
+  background-color: $color-white;
+  margin:3.7rem;
+  max-height: 37rem;
+  max-width: 112.4rem;
+  box-sizing: border-box;
+}
+.advantage_single_trumpet{
+  display:flex;
+  background-color: $color-light-grey;
+  gap: 6.1rem;
+  .advantage_content_trumpet{
+    padding-left:3.5rem;
+    padding-top: 6.9rem;
+    padding-right: 3.5rem;
+    background-color: $color-white;
+    width: 62.3rem ;
+    @include line($color:$color-accent-green);
+  }
+}
+.advantage__img_trumpet{
+  background-color: $color-accent-green;
+  width:44rem ;
+  padding-top:9.9rem ;
+  padding-left: 6.2rem;
+
+}
+.advantage_single_trumpet{
+  box-sizing: border-box;
+}
+
+.advantage__img_macbook{
+  box-sizing: border-box;
+  &::before{
+    display: block;
+    content:"";
+    width: 21.5rem;
+    height: 21.5rem;
+    border-radius: 41px;
+    background-color: $color-accent-redish;
+    position: absolute;
+    transform: rotate(45deg);
+    margin-top:7.5rem;
+    margin-left: 17.8rem;
+
+  }
+  img{
+    padding-top: 11.3rem;
+    z-index: 2;
+    position: relative;
+    display:block;
+    padding-right:11.8rem;
+
+  }
+}
+.advantage__single_macbook{
+  .advantage_content{
+    padding-top: 9.1rem;
+    padding-left:3.5rem;
+    @include line($color:$color-accent-redish);
+  }
+}
+
+
+.advantage__img_phone{
+  box-sizing: border-box;
+  img {
+    padding-top: 2.9rem;
+    padding-left: 7rem;
+    position: relative;
+  }
+  &::before{
+    display:block;
+    content: "";
+    position: absolute;
+    width: 32rem;
+    height:32rem ;
+    background-color: $color-primary;
+    border-radius:50%;
+    margin-top:1.2rem;
+    margin-left: 7rem;
+  }
+}
+.advantage__single_phone{
+  .advantage_content{
+    padding-top: 6.9rem;
+    padding-right: 2rem;
+    @include line($color:$color-primary);
+  }
+}
+@media (max-width: 600px) {
+
+}

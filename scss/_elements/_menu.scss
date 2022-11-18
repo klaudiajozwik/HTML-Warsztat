@@ -1,0 +1,65 @@
+@import "scss/_settings/_settings";
+:root{
+  font-size:10px;
+}
+*{
+  margin:0;
+  padding:0;
+}
+
+header {
+  position: relative;
+
+}
+.container {
+  width: 135.2rem;
+  margin: 0 auto;}
+
+nav{
+  background: $color-white;
+  box-shadow: 0 0.3rem 0.6rem $color-light-grey;
+  .nav__content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      @include logo()
+    }
+    ul {
+      list-style: none;
+      display: flex;
+    }
+  }
+}
+li{
+  padding: 2.8rem 6rem 2.2rem;
+  font-size: 11px;
+  text-transform: uppercase;
+  border-bottom: 4px solid transparent;
+  font-family: $font-open-sans;
+  font-weight: bold;
+  a {
+    text-decoration: none;
+    color: $color-grey;
+  }
+  &:focus{
+    color: $color-basic;
+    outline-color: $color-accent-redish;
+    border-bottom: 0.4rem solid $color-grey;
+    box-sizing: border-box;
+  }
+  &:hover{
+    outline: 0;
+    cursor:pointer;
+    border-bottom: 0.4px solid $color-primary;
+    box-sizing: border-box;
+     a{
+       color:$color-basic;
+     }
+  }
+
+}
+
+@media (max-width: 600px) {
+
+}

@@ -1,0 +1,160 @@
+
+  $color-primary: #08A6E4;
+  $color-shadow-primary: #07ACE629;
+  $color-basic: black;
+  $color-grey: #A5A5A5;
+  $color-light-grey: #F7F7F7;
+  $color-white:white;
+  $color-accent-redish: #FB3B64;
+  $color-accent-green: #55DFB4;
+  $font-open-sans: 'Open Sans', sans-serif;
+  $font-releway: 'Raleway', sans-serif;
+
+@mixin btnPrimary($border-radius:40px,$btn-padding:22px 92px, $btn-f-size:16px)
+{
+  border-radius:$border-radius;
+  background-color:$color-primary;
+  color:white;
+  padding:$btn-padding;
+  border:none;
+  a {
+    font-family: $font-open-sans;
+    text-decoration:none;
+    font-size:$btn-f-size;
+    color:white;
+    text-underline: none;
+    font-weight: bold;
+    box-shadow: 5px 10px 14px $color-shadow-primary;
+  }
+}
+@mixin btnPrice($bgc:$color-primary, $box-shadow: 5px 10px 14px $color-shadow-primary) {
+  background-color: $bgc;
+  padding: 16px 57px;
+  border-radius: 23px;
+  border:none;
+  position: relative;
+  bottom: -25px;
+  margin-top:7rem;
+  font-family:$font-open-sans;
+  a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    text-underline: none;
+    font-weight: bold;
+    font: $font-open-sans;
+    box-shadow: $box-shadow;
+
+  }
+}
+
+@mixin logo($f-s:32px){
+  font-family: $font-releway;
+  color:$color-primary;
+  font-size:$f-s;
+  font-weight: lighter;
+  padding-bottom: 16.5px;
+  padding-top: 16.5px;
+}
+
+@mixin sectionHeading($font-size:36px){
+  font-size:$font-size;
+  font-family:$font-releway;
+  color:$color-basic;
+  font-weight: normal;
+  text-align: center;
+
+}
+  @mixin line($color:$color-primary){
+    &::after{
+      display:block;
+      content:"";
+      height: 3px;
+      width: 32.8rem;
+      background-color: $color;
+      border: none;
+    }
+  }
+  @mixin boxPrice($border: 1px solid $color-accent-redish, $box-shadow:none){
+    box-sizing: border-box;
+    border: $border;
+    width: 37.2rem;
+    border-radius: 18px;
+    box-shadow: $box-shadow;
+    padding-top: 3.4rem;
+    &:hover{
+      box-sizing: border-box;
+      width: 40.2rem;
+      outline: none;
+      margin:0
+    }
+  }
+  @mixin priceText($color:$color-primary){
+    color:$color;
+    text-align: center;
+    font-family:$font-open-sans;
+    font-size: 46px;
+    font-weight: lighter;
+    padding-top: 1.4rem;
+  }
+  @mixin priceIcons ($bgi:url(../assets/Ckechmark-1.svg)){
+    content:"";
+    display: block;
+    background-image: $bgi;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  @mixin form-area-text ($mb:4.2rem)
+  {
+    border-bottom: 2px solid $color-grey;
+    border-top:none;
+    border-left:none;
+    border-right: none;
+    width: 44rem;
+    height: 4.2rem;
+    margin-bottom: $mb;
+  }
+%statistic-text-black{
+  font-size:20px;
+  font-family: $font-releway;
+  font-weight: 800;
+  letter-spacing: 5.96px;
+  color:$color-basic;
+}
+%statistic-text-grey{
+  font-size: 17px;
+  font-family:$font-releway ;
+  color:$color-grey;
+}
+%text-benefits{
+  font-family: $font-open-sans;
+  font-size: 14px;
+  color:$color-basic;
+}
+%price-package-type-heading{
+  font-family:$font-releway ;
+  font-size:20px;
+  font-weight: bold;
+  color:$color-basic;
+  text-align: center;
+
+}
+%price-text{
+  font-size:12px;
+  font-family: $font-releway;
+  font-weight: bold;
+  color:$color-basic;
+  text-align:center;
+  padding-top:0.5rem;
+}
+%input-text{
+  color:$color-primary;
+  text-transform: uppercase;
+  font-size:11px ;
+  font-weight: bold;
+  font-family: $font-open-sans;
+  letter-spacing: 3.28px;
+}
+
