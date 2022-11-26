@@ -13,6 +13,7 @@
     p{
       padding-top: 3rem;
       padding-bottom:4rem;
+      line-height: 1.9;
       @extend %text-benefits;
     }
   }
@@ -26,7 +27,7 @@
   background-color: $color-white;
   //margin-top:3.7rem;
   margin:0 auto;
-  max-height: 37rem;
+  min-height: 37rem;
   max-width: 112.4rem;
   box-sizing: border-box;
 }
@@ -40,15 +41,20 @@
     padding-top: 6.9rem;
     padding-right: 3.5rem;
     background-color: $color-white;
-    width: 62.3rem ;
-    @include line($color:$color-accent-green);
+    max-width: 62.3rem;
+    @include line($color:$color-accent-green, $display:block);
   }
 }
 .advantage__img_trumpet{
   background-color: $color-accent-green;
-  width:44rem ;
+  max-width:44rem;
   padding-top:9.9rem ;
   padding-left: 6.2rem;
+  padding-right: 2rem;
+img{
+  width: 29.6rem;
+  height: auto;
+}
 
 }
 .advantage_single_trumpet{
@@ -71,27 +77,35 @@
 
   }
   img{
+    width: 400px;
+    height: auto;
     padding-top: 11.3rem;
-    z-index: 2;
+    padding-right:11.8rem;
+    padding-bottom: 3.8rem;
+    z-index: 1;
     position: relative;
     display:block;
-    padding-right:11.8rem;
-
   }
 }
-.advantage__single_macbook{
-  margin-top:3.7rem;
-  .advantage_content{
-    padding-top: 9.1rem;
-    padding-left:3.5rem;
-    @include line($color:$color-accent-redish);
+.advantage_container {
+  .advantage__single_macbook {
+    margin-top: 3.7rem;
+    display: flex;
+    flex-direction: row;
+
+    .advantage_content {
+      padding-top: 9.1rem;
+      padding-left: 3.5rem;
+      @include line($color: $color-accent-redish, $display: block);
+    }
   }
 }
-
 
 .advantage__img_phone{
   box-sizing: border-box;
   img {
+    width: 40rem;
+    height: auto;
     padding-top: 2.9rem;
     padding-left: 7rem;
     position: relative;
@@ -113,9 +127,135 @@
   .advantage_content{
     padding-top: 6.9rem;
     padding-right: 2rem;
-    @include line($color:$color-primary);
+    @include line($color:$color-primary, $display:block);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 1050px) {
+  .benefits__container {
+    display: flex;
+    flex-direction: column;
+    :nth-child(1){
+      margin-top:0;
+  }
+  .advantage__single {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 31.5rem;
+    }
 
+  }
+  .advantage__single_phone {
+    border-radius:0.5rem ;
+    margin-bottom: 4.1rem;
+    border: 1px solid #E8E9ED;
+.advantage__img_phone {
+  &::before{
+    display:block;
+    content: "";
+    position: absolute;
+    width: 13.2rem;
+    height:13.2rem ;
+    background-color: $color-primary;
+    border-radius:50%;
+    margin-top:1.2rem;
+    margin-left: 9rem;
+  }
+  img {
+    width: 17.5rem;
+    height: auto;
+    padding-left: 9rem;
+  }
 }
+
+    .advantage_content {
+      padding-top: 0;
+      padding-left: 0;
+      @include line($display: none);
+      h2{
+        text-align: start;
+        padding-left: 2rem;
+      }
+      p{
+        padding:2rem;
+      }
+    }
+
+  }
+
+  .advantage_container {
+    .advantage__single_macbook {
+      display: flex;
+      flex-direction: column-reverse !important;
+      border-radius:0.5rem ;
+      border: 1px solid #E8E9ED;
+      .advantage__img_macbook {
+        box-sizing: border-box;
+        &::before{
+          display: block;
+          content:"";
+          width: 12.5rem;
+          height: 12.5rem;
+          border-radius: 4.1rem;
+          background-color: $color-accent-redish;
+          position: absolute;
+          transform: rotate(45deg);
+          margin-top:3rem;
+          margin-left: 15rem;
+        }
+
+        img {
+          width: 19.3rem;
+          height: auto;
+          padding: 8rem 9.5rem 2.7rem 8.5rem;
+        }
+      }
+
+      .advantage_content {
+        box-sizing: border-box;
+        padding-top:0;
+        padding-left: 0;
+        @include line($display: none);
+        h2{
+          text-align: start;
+          padding-left: 2rem;
+        }
+        p{
+          padding: 2rem;
+        }
+      }
+    }
+  }
+  .advantage_single_trumpet {
+    box-sizing: border-box;
+    max-width: 31.5rem;
+    margin: 0 auto;
+    gap:0 !important;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    .advantage_content_trumpet {
+      padding-top: 3rem;
+      padding-left: 0;
+      @include line($display: none);
+      h2{
+        text-align: start;
+        padding-left: 2rem;
+      }
+      p{
+        padding:2rem;
+      }
+    }
+    .advantage__img_trumpet{
+      padding-left: 2rem;
+      max-width:31.4rem;
+      height:19.5rem ;
+      img{
+        width: 25rem;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+

@@ -27,3 +27,19 @@
   padding-top: 3.5rem;
 
 }
+@media(max-width: 600px) {
+  .footer__text {
+    .logo {
+      padding-left: 1.7rem;
+      @include logo($padding-bottom: 0)
+    }
+
+    p {
+
+      padding-left: 1.7rem;
+    }
+  }
+  .footer__sm{
+    padding-right: 3rem;
+  }
+}

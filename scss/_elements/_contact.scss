@@ -29,6 +29,12 @@
   display: flex;
   gap:1rem;
   align-items: center;
+  .contact__details_mail{
+    display:flex;
+  }
+  .contact__details_phone{
+    display:flex;
+  }
 }
 .form__text{
   display: flex;
@@ -98,3 +104,35 @@ form{
     font-size: 12px;
     line-height: 17px;
   }
+@media(max-width: 600px){
+  .form__container{
+    padding-top:7.7rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+  }
+  .contact {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    h2{
+      text-align: start;
+    }
+    .contact__details {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .contact__details_mail {
+        display: flex;
+      }
+
+      .contact__details_phone {
+        display: flex;
+      }
+    }
+  }
+}

@@ -48,12 +48,12 @@
   }
 }
 
-@mixin logo($f-s:32px){
+@mixin logo($f-s:32px, $padding-bottom:16.5px){
   font-family: $font-releway;
   color:$color-primary;
   font-size:$f-s;
   font-weight: lighter;
-  padding-bottom: 16.5px;
+  padding-bottom: $padding-bottom;
   padding-top: 16.5px;
 }
 
@@ -65,9 +65,9 @@
   text-align: center;
 
 }
-  @mixin line($color:$color-primary){
+  @mixin line($color:$color-primary, $display:none){
     &::after{
-      display:block;
+      display:$display;
       content:"";
       height: 3px;
       width: 32.8rem;

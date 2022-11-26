@@ -4,25 +4,35 @@
     <meta charset="UTF-8">
     <title>Title</title>
 <!--    <link rel="stylesheet" href="css/reset.css">-->
-    <link rel="stylesheet" href="dist/index.574c7455.css">
+    <link rel="stylesheet" href="scss/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Raleway:ital,wght@0,300;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
 </head>
 <body>
-<header>
-    <nav>
-        <div class="nav__content container">
-    <p class="logo"> BestShop </p>
-    <ul>
-        <li> <a href="#why"> Why Us </a> </li>
-        <li> <a href="#benefits"> Benefits </a> </li>
-        <li>  <a href="#price"> Prices </a> </li>
-        <li> <a href="#contact">Contact </a>  </li>
-    </ul>
+<header class="page-header">
+
+    <menu class="menu ">
+        <div class="menu__content container">
+             <div class="logo"> BestShop </div>
+            <button class="page-burger">
+                <strong> Pokaż menu </strong>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+             <nav class="nav__content">
+                <ul class="page-nav-list">
+                      <li> <a href="#why"> Why Us </a> </li>
+                      <li> <a href="#benefits"> Benefits </a> </li>
+                      <li>  <a href="#price"> Prices </a> </li>
+                     <li> <a href="#contact">Contact </a>  </li>
+                 </ul>
+              </nav>
+
         </div>
-    </nav>
+    </menu>
 </header>
         <section class="first_window">
         <div class="opening_content container">
@@ -65,19 +75,19 @@
     </div>
 </section>
 <section class="advantage_container" id="benefits">
-    <div class="container">
+    <div class="container benefits__container">
         <article class="advantage__single advantage__single_macbook">
                 <div class="advantage_content">
                     <h2>Be always first</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corporis dolor expedita laborum libero neque, officiis quidem quos similique voluptatum? </p>
                 </div>
                 <div class="advantage_img advantage__img_macbook">
-                    <img src="assets/Macbook.png" alt="macbook" width="400px" height="220px">
+                    <img src="assets/Macbook.png" alt="macbook" >
                 </div>
         </article>
         <article class="advantage__single advantage__single_phone">
             <div class="advantage_img advantage__img_phone">
-                <img src="assets/iPhone.png" alt="phone" width="400px" height="330px">
+                <img src="assets/iPhone.png" alt="phone">
             </div>
             <div class="advantage_content">
                 <h2> Your shop is <br> where you are! </h2>
@@ -92,7 +102,7 @@
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
             <div class="advantage__img_trumpet">
-                 <img src="assets/Trumpet.png" alt="trumpet" width="296px" height="208px">
+                 <img src="assets/Trumpet.png" alt="trumpet">
             </div>
 
         </article>
@@ -105,90 +115,89 @@
     </div>
     <article class="price__box container">
         <div class="price__box_basic">
+            <div class="price__box-text">
+            <div class="price__box_content">
             <h4> Basic </h4>
             <h5> $0 </h5>
+                </div>
             <div class="price__box_basic_description">
             <div class="price__checkmark">
-<!--                <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
+
                 <p> 100 MB HDD </p>
             </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> 1 Subdomain </p>
                     </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> 2 E-mails </p>
                 </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">-->
                <p> Two years licence </p>
                     </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">-->
                     <p> Full support </p>
                     </div>
             </div>
+                </div>
             <div>
                 <button class="btn__price_1 btn__price"> <a href="#button-price-basic"> Begin </a> </button>
             </div>
 
         </div>
         <div class="price__box_professional">
+            <div class="price__box-text">
+                <div class="price__box_content">
             <h4> Professional</h4>
             <h5> $20 </h5>
             <p>Limited offer</p>
+                    </div>
             <div class="price__box_professional_description">
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                      <p> 500 MB HDD </p>
                     </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                      <p> 2 Subdomain</p>
                 </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
-                     <p> 5 E-mails </p>
+                    <p> 5 E-mails </p>
                     </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
             <p> One years licence </p>
                     </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Close.svg" alt="check" width="15px" height="15px">-->
             <p> Full support </p>
                     </div>
             </div>
+                </div>
             <div>
                 <button class="btn__price_2 btn__price"> <a href="#button-price-professional"> Begin </a> </button>
             </div>
         </div>
+
         <div class="price__box_premium">
+         <div class="price__box-text">
+         <div class="price__box_content">
             <h4> Premium </h4>
             <h5> $60 </h5>
             <p>Limited offer</p>
-            <div class="price__box_premium_description">
+        </div>
+         <div class="price__box_premium_description">
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
-                <p> 2 GB HDD </p>
+                    <p> 2 GB HDD </p>
                 </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> 5 Subdomain </p>
                     </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> 20 E-mails </p>
                     </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                 <p> Two years licence </p>
                 </div>
                 <div class="price__checkmark">
-<!--                    <img src="assets/Ckechmark-1.svg" alt="check" width="15px" height="15px">-->
                    <p> Full support </p>
                     </div>
+            </div>
             </div>
             <div>
                 <button class="btn__price_3 btn__price"> <a href="#button-price-premium"> Begin </a> </button>
@@ -202,13 +211,17 @@
     <h2>Any questions?</h2>
         <h3> Leave your email address or contact us! </h3>
         <div class="contact__details">
+            <div class="contact__details_mail">
             <img src="assets/Mail%20Icon.svg" alt="mail icon" width="27px" height="27px" class="contact__image">
             <p>info@bestshop.xyz </p>
+            </div>
+            <div class="contact__details_phone">
             <img src="assets/Phone%20Icon.svg" alt="mail icon" width="27px" height="27px" class="contact__image">
             <p>  123 456 789 </p>
+            </div>
         </div>
     </div>
-    <div class="input"> </div>
+<!--    <div class="input"> </div>-->
 <form class="form">
     <div class="form__text">
     <label for="text" class="label_text"> name </label>
@@ -238,5 +251,6 @@
         </div>
     </div>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>
