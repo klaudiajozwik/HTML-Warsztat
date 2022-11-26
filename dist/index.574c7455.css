@@ -263,7 +263,7 @@ header {
 }
 
 .menu {
-  max-width: 100vw;
+  max-width: 100%;
   background: #fff;
   box-shadow: 0 .3rem .6rem #f7f7f7;
 }
@@ -403,7 +403,7 @@ li:hover a {
   }
 
   .page-nav-list li {
-    width: 100vh;
+    width: 100%;
     padding: 1.4rem 2.5rem;
   }
 
